@@ -1,5 +1,21 @@
 # @backstage/create-app
 
+## 0.3.46
+
+### Patch Changes
+
+- b486adb8c6: Removed the included `jest` configuration from the root `package.json` as the `transformModules` option no longer exists.
+
+  To apply this change to an existing app, make the follow change to the root `package.json`:
+
+  ```diff
+  -  "jest": {
+  -    "transformModules": [
+  -      "@asyncapi/react-component"
+  -    ]
+  -  }
+  ```
+
 ## 0.3.45
 
 ### Patch Changes
